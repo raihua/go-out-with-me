@@ -7,7 +7,7 @@ runawayBtn.addEventListener("mousemove", () => {
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
-  runawayBtn.style.position = "absolute"; // Add this line
+  runawayBtn.style.transition = "left 0.5s, top 0.5s";
   runawayBtn.style.left = `${randomX}px`;
   runawayBtn.style.top = `${randomY}px`;
 });
@@ -22,7 +22,7 @@ function runAway() {
     const randomX = Math.floor(Math.random() * maxX);
     const randomY = Math.floor(Math.random() * maxY);
 
-    runawayBtn.style.position = "absolute"; // Add this line
+    runawayBtn.style.transition = "left 0.5s, top 0.5s";
     runawayBtn.style.left = `${randomX}px`;
     runawayBtn.style.top = `${randomY}px`;
   });
