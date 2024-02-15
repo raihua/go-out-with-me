@@ -7,26 +7,11 @@ runawayBtn.addEventListener("mousemove", () => {
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
+  runawayBtn.style.position = "absolute";
   runawayBtn.style.transition = "left 0.5s, top 0.5s";
   runawayBtn.style.left = `${randomX}px`;
   runawayBtn.style.top = `${randomY}px`;
 });
-
-function runAway() {
-  const runawayBtn = document.getElementById("runawaybtn");
-
-  runawayBtn.addEventListener("mousemove", () => {
-    const maxX = window.innerWidth - runawayBtn.offsetWidth;
-    const maxY = window.innerHeight - runawayBtn.offsetHeight;
-
-    const randomX = Math.floor(Math.random() * maxX);
-    const randomY = Math.floor(Math.random() * maxY);
-
-    runawayBtn.style.transition = "left 0.5s, top 0.5s";
-    runawayBtn.style.left = `${randomX}px`;
-    runawayBtn.style.top = `${randomY}px`;
-  });
-}
 
 function onClickYes() {
   document.getElementById("teehee").src = "inlove.gif";
