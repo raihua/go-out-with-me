@@ -1,0 +1,36 @@
+html {
+    background-color: #ffbfcb;
+}
+
+h1, p, button{
+    text-align: center;
+    font-family: pacifico, cursive;
+    font-size: 200%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 70%; /* Decreased width to 80% */
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 40%; /* Decreased width to 40% */
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        width: 20%; /* Decreased width to 20% */
+    }
+}
+
+button {
+    display: block;
+    margin: 10px auto 0;
+    font-size: 200%; /* Increased size by 10% */
+    border-radius: 8px
+}
